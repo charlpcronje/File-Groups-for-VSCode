@@ -28,44 +28,60 @@ File Groups for VS Code is a Visual Studio Code extension that allows you to cre
 - **Delete File Group**: Delete an existing file group.
 - **Add File(s) to Group from Explorer**: Add selected file(s) to a specific group directly from the file explorer context menu.
 
-## Installation
+### 1. **Installation**
 
-1. **From Visual Studio Code Marketplace**:
-   - Go to the Extensions view (`Ctrl+Shift+X`).
-   - Search for "File Groups for VS Code".
-   - Click "Install".
+#### **From .vsix File**
 
-2. **From .vsix File**:
-   - Download the latest `.vsix` file from the [Releases](https://github.com/charlpcronje/File-Groups-for-VSCode/releases) page.
+1. **Download the .vsix File**:
+   - If you've packaged the extension as a `.vsix` file, make sure it's available on your local machine.
+
+2. **Install the Extension**:
    - Open Visual Studio Code.
-   - Go to the Extensions view (`Ctrl+Shift+X`).
-   - Click on the three dots (`...`) in the upper right corner and select "Install from VSIX...".
-   - Select the downloaded `.vsix` file.
+   - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+   - Click on the ellipsis `...` in the top right corner of the Extensions view.
+   - Select `Install from VSIX...`.
+   - Navigate to and select the `.vsix` file you downloaded or packaged.
 
-## Usage
+#### **From the Visual Studio Code Marketplace**
 
-### Commands
+1. **Search for the Extension**:
+   - Open Visual Studio Code.
+   - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+   - In the search bar, type "File Group Manager".
+   - Find the extension in the list and click the `Install` button.
 
-You can access all the commands provided by this extension through the Command Palette (`Ctrl+Shift+P`) by searching for `File Group Manager:`. Here are the available commands:
+### 2. **Using the Extension**
 
-- **File Group Manager: Create File Group**
-- **File Group Manager: Add Files to Group**
-- **File Group Manager: Toggle File Group**
-- **File Group Manager: Duplicate Group**
-- **File Group Manager: Rename Group**
-- **File Group Manager: Combine Files to Markdown**
-- **File Group Manager: Export File Groups**
-- **File Group Manager: Import File Groups**
-- **File Group Manager: Delete File Group**
+#### **Commands**
 
-### Context Menu
+You can access the commands provided by the extension via the Command Palette (`Ctrl+Shift+P`). Here are the available commands:
+
+- **File Group Manager: Create File Group**: Create a new file group.
+- **File Group Manager: Add Files to Group**: Add selected files to a specific group.
+- **File Group Manager: Toggle File Group**: Toggle the visibility of files in the selected group.
+- **File Group Manager: Duplicate Group**: Duplicate an existing file group.
+- **File Group Manager: Rename Group**: Rename an existing file group.
+- **File Group Manager: Combine Files to Markdown**: Combine all files in a group into a single markdown file.
+- **File Group Manager: Export File Groups**: Export all file groups to a JSON file.
+- **File Group Manager: Import File Groups**: Import file groups from a JSON file.
+- **File Group Manager: Delete File Group**: Delete an existing file group.
+- **File Group Manager: Refresh File Groups**: Refresh the list of file groups.
+
+#### **Context Menu**
 
 You can also add files to groups directly from the file explorer context menu:
 
-- Right-click on a file or multiple selected files in the explorer.
-- Choose **Add File to Group** or **Add Files to Group**.
+1. **Add File to Group**:
+   - Right-click on a file in the explorer.
+   - Choose **Add File to Group** from the context menu.
+   - Select the group you want to add the file to.
 
-### Combining Files to Markdown
+2. **Add Files to Group**:
+   - Right-click on multiple selected files in the explorer.
+   - Choose **Add Files to Group** from the context menu.
+   - Select the group you want to add the files to.
+
+#### **Combining Files to Markdown**
 
 When combining files in a group to a markdown file, the format will be as follows:
 
@@ -97,18 +113,44 @@ START OF COMBINED FILES
 END OF COMBINED FILES
 ```
 
-## Contributing
+### 3. **Example Workflow**
 
-Contributions are welcome! If you have any suggestions or find any issues, please create a new issue or submit a pull request on the [GitHub repository](https://github.com/charlpcronje/File-Groups-for-VSCode).
+1. **Creating a File Group**:
+   - Open the Command Palette (`Ctrl+Shift+P`).
+   - Type `File Group Manager: Create File Group` and press `Enter`.
+   - Enter the name of the new file group and press `Enter`.
 
-## License
+2. **Adding Files to a Group**:
+   - Open the Command Palette (`Ctrl+Shift+P`).
+   - Type `File Group Manager: Add Files to Group` and press `Enter`.
+   - Select the group you want to add files to.
+   - Select the files from the open dialog and press `Enter`.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+3. **Toggling File Group Visibility**:
+   - Open the Command Palette (`Ctrl+Shift+P`).
+   - Type `File Group Manager: Toggle File Group` and press `Enter`.
+   - Select the group whose files you want to view.
 
-## Acknowledgements
+4. **Combining Files into Markdown**:
+   - Open the Command Palette (`Ctrl+Shift+P`).
+   - Type `File Group Manager: Combine Files to Markdown` and press `Enter`.
+   - Select the group whose files you want to combine.
+   - Save the combined markdown file to the desired location.
+
+### 4. **Contributing**
+
+If you want to contribute to the extension or report issues, visit the [GitHub repository](https://github.com/charlpcronje/File-Groups-for-VSCode).
+
+### 5. **License**
+
+This extension is licensed under the MIT License. See the [LICENSE](https://github.com/charlpcronje/File-Groups-for-VSCode/blob/main/LICENSE) file for details.
+
+### 6. **Acknowledgements**
 
 - Thanks to the Visual Studio Code team for providing such a powerful and extensible editor.
 
 ---
 
-For more details and the latest updates, visit the [GitHub repository](https://github.com/charlpcronje/File-Groups-for-VSCode)
+For more details and the latest updates, visit the [GitHub repository](https://github.com/charlpcronje/File-Groups-for-VSCode).
+
+Let me know if you need further assistance or if there's anything else I can help you with!
