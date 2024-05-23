@@ -37,7 +37,11 @@
             },
             {
                 "command": "fileGroupManager.toggleFileGroup",
-                "title": "Toggle File Group"
+                "title": "Toggle File Group",
+                "icon": {
+                    "light": "assets/light/filter.svg",
+                    "dark": "assets/dark/filter.svg"
+                }
             },
             {
                 "command": "fileGroupManager.duplicateGroup",
@@ -49,7 +53,11 @@
             },
             {
                 "command": "fileGroupManager.combineFilesToMarkdown",
-                "title": "Combine Files to Markdown"
+                "title": "Combine Files to Markdown",
+                "icon": {
+                    "light": "assets/light/combine.svg",
+                    "dark": "assets/dark/combine.svg"
+                }
             },
             {
                 "command": "fileGroupManager.deleteFileGroup",
@@ -65,7 +73,11 @@
             },
             {
                 "command": "fileGroupManager.refreshEntry",
-                "title": "Refresh File Groups"
+                "title": "Refresh File Groups",
+                "icon": {
+                    "light": "assets/light/refresh.svg",
+                    "dark": "assets/dark/refresh.svg"
+                }
             },
             {
                 "command": "fileGroupManager.addFileToGroupFromExplorer",
@@ -85,12 +97,12 @@
         "menus": {
             "explorer/context": [{
                     "command": "fileGroupManager.addFileToGroupFromExplorer",
-                    "when": "resourceLangId == markdown",
+                    "when": "resourceLangId != ''",
                     "group": "navigation"
                 },
                 {
                     "command": "fileGroupManager.addFilesToGroupFromExplorer",
-                    "when": "resourceLangId == markdown",
+                    "when": "resourceLangId != ''",
                     "group": "navigation"
                 }
             ]
