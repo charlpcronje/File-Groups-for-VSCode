@@ -1,11 +1,12 @@
 import * as vscode from 'vscode';
+import { FileGroup } from './types';
 
 export class FileGroupProvider implements vscode.TreeDataProvider<FileGroupItem> {
 
   private _onDidChangeTreeData: vscode.EventEmitter<FileGroupItem | undefined> = new vscode.EventEmitter<FileGroupItem | undefined>();
   readonly onDidChangeTreeData: vscode.Event<FileGroupItem | undefined> = this._onDidChangeTreeData.event;
 
-  constructor(private fileGroups: FileGroup[]) {}
+  constructor(private fileGroups: FileGroup[]) { }
 
   refresh(): void {
     this._onDidChangeTreeData.fire(undefined);
