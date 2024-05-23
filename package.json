@@ -1,0 +1,70 @@
+{
+  "name": "file-groups-for-vscode",
+  "displayName": "File Groups for VSCode",
+  "description": "Create / Update and Delete file groups and combine the files to a single markdown file",
+  "version": "0.0.1",
+  "publisher": "your-publisher",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:fileGroupManager.createFileGroup",
+    "onCommand:fileGroupManager.addFilesToGroup",
+    "onCommand:fileGroupManager.toggleFileGroup",
+    "onCommand:fileGroupManager.duplicateGroup",
+    "onCommand:fileGroupManager.renameGroup",
+    "onCommand:fileGroupManager.combineFilesToMarkdown",
+    "onCommand:fileGroupManager.refreshEntry"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5",
+    "esbuild": "^0.12.15",
+    "@types/node": "^10.0.0",
+    "@types/vscode": "^1.50.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "fileGroupManager.createFileGroup",
+        "title": "Create File Group"
+      },
+      {
+        "command": "fileGroupManager.addFilesToGroup",
+        "title": "Add Files to Group"
+      },
+      {
+        "command": "fileGroupManager.toggleFileGroup",
+        "title": "Toggle File Group"
+      },
+      {
+        "command": "fileGroupManager.duplicateGroup",
+        "title": "Duplicate Group"
+      },
+      {
+        "command": "fileGroupManager.renameGroup",
+        "title": "Rename Group"
+      },
+      {
+        "command": "fileGroupManager.combineFilesToMarkdown",
+        "title": "Combine Files to Markdown"
+      },
+      {
+        "command": "fileGroupManager.refreshEntry",
+        "title": "Refresh File Groups"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "fileGroupManagerView",
+          "name": "File Groups"
+        }
+      ]
+    }
+  }
+}
